@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>DOM parte 3</title>
+</head>
+<body>
+    <h1 id="ache1">Mi primera pagina</h1>
+    <p id="pe1">Pe</p>
+    <p id="pe2">Pe2</p>
+    <button onclick="cargar()">cargar</button>
+    <script>
+        function cargar(){
+        document.getElementById("pe2").innerHTML = document.getElementById("ache1").innerHTML;
+        document.getElementById("pe1").innerHTML = document.getElementById("ache1").nodeName;
+        document.getElementById("ache1").innerHTML = document.getElementById("ache1").firstChild.nodeValue;
+        }
+
+    </script>
+</body>
+</html>
